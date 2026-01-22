@@ -46,11 +46,13 @@
   color: var(--text);
   text-decoration: none;
 
-  background: rgba(180, 190, 210, 0.10);
+ background: rgba(180, 190, 210, 0.12);
+border: 1px solid rgba(180, 190, 210, 0.18);
+
+@supports (backdrop-filter: blur(1px)) {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-
-  border: 1px solid rgba(180, 190, 210, 0.18);
+}
 
   box-shadow:
     0 0 0 rgba(0,0,0,0),
